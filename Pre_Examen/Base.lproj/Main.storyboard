@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pre_Examen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BICHOBOOK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtQ-Of-hlZ">
+                                <rect key="frame" x="0.0" y="74.5" width="414" height="21"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KN0-FW-kq4">
+                                <rect key="frame" x="82" y="264" width="252" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ewG-xX-Wqo">
+                                <rect key="frame" x="80" y="318" width="254" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5O-hM-8Ps">
+                                <rect key="frame" x="165" y="433" width="99" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Iniciar Session">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="IniciarSesion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m7m-vc-kkm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ewG-xX-Wqo" firstAttribute="top" secondItem="KN0-FW-kq4" secondAttribute="bottom" constant="20" id="2fG-ZE-f8D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a5O-hM-8Ps" secondAttribute="trailing" constant="150" id="60O-fc-fBX"/>
+                            <constraint firstItem="a5O-hM-8Ps" firstAttribute="top" secondItem="ewG-xX-Wqo" secondAttribute="bottom" constant="80" id="9Ez-XD-Ys5"/>
+                            <constraint firstItem="ewG-xX-Wqo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Auy-wP-h1A"/>
+                            <constraint firstItem="KN0-FW-kq4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="10:16" constant="1" id="MmD-P1-eFj"/>
+                            <constraint firstItem="JtQ-Of-hlZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O4P-zR-xKl"/>
+                            <constraint firstItem="JtQ-Of-hlZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="3:16" constant="1" id="Rth-Ri-i6T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KN0-FW-kq4" secondAttribute="trailing" constant="80" id="dj0-I1-tan"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JtQ-Of-hlZ" secondAttribute="trailing" id="ffH-uO-KWv"/>
+                            <constraint firstItem="JtQ-Of-hlZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0234375" id="hPZ-Ye-TXx"/>
+                            <constraint firstItem="a5O-hM-8Ps" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jJS-6g-iNf"/>
+                            <constraint firstItem="JtQ-Of-hlZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="uz3-Ef-276"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ewG-xX-Wqo" secondAttribute="trailing" constant="80" id="wvQ-3C-7BF"/>
+                            <constraint firstItem="KN0-FW-kq4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="yon-GI-vKE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="EmmanuelTfContraseña" destination="ewG-xX-Wqo" id="CbV-un-ksH"/>
+                        <outlet property="Emmanuelbtn" destination="a5O-hM-8Ps" id="S2p-5C-9QG"/>
+                        <outlet property="Emmanueltfcorreo" destination="KN0-FW-kq4" id="k1M-K8-6dR"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="132" y="139"/>
+        </scene>
+    </scenes>
+</document>
